@@ -74,7 +74,7 @@ h2 {
 </header> -->
   
 <!-- Header with image -->
-<header class= "bgimg w3-display-container w3-light-blue w3-grayscale-min" id="home">
+<header class= "bgimg w3-display-container w3-blue-grey w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-center">
     <h1 id="toc_0">Workshop for Heterogeneous and Composable Memory</h1>
   </div>
@@ -158,7 +158,7 @@ h2 {
 </div>
   
 <!-- Fourth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="dates">
+<div class="w3-row-padding w3-padding-64 w3-container" id="committees">
   <div class="w3-content">
       <h2>Program Committee</h2>
       <h5 class="w3-text-black">
@@ -177,7 +177,7 @@ h2 {
 </div>  
       
     
-<div class="w3-row-padding w3-padding-64 w3-container" id="committees">
+<div class="w3-row-padding w3-padding-64 w3-container" id="organizers">
   <div class="w3-content">
     <div class="w3-twothird">
 
@@ -220,10 +220,10 @@ function openMenu(evt, menuName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    tablinks[i].className = tablinks[i].className.replace(" w3-light-grey", "");
   }
   document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  evt.currentTarget.firstElementChild.className += " w3-light-grey";
 }
 document.getElementById("myLink").click();
 </script>
