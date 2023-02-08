@@ -54,6 +54,11 @@ h2 {
 .bold { font-weight: bold; }
 .red { color: #FF0000; }
 
+ul li::marker {
+  color: red;
+  font-size: 1.5em;
+}
+
 </style>
 <body>
 
@@ -123,8 +128,9 @@ h2 {
     <h3 style="color: #0c4466;"> <b>Opening Remarks</b>&emsp;&emsp;8:00 am - 8:10 am ET</h3>
       <h3 style="color: #0c4466;"> <b>Section 1</b>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; 8:10 am - 9:50 am ET</h3>
       <h5 class="w3-text-black">
-        <li> Invited talk: TBA  </li>
-        Speaker: Debendra Das Sharma  (Intel)
+      <ul>
+        <li> Debendra Das Sharma, Intel - TBA  </li>
+      
         <li> 8:30 - 8:50 am: Invited talk from Jason Lowe-power, UC Davis</li>
         <li> 8:50 - 9:10 am: Invited talk from Hasan Al Maruf, University of Michigan</li>
         <li> 9:10 - 9:30 am: Invited talk from Daniel S. Berger, Microsoft </li>
@@ -135,6 +141,7 @@ h2 {
       <h5 class="w3-text-black">
         <li>10:20 - 11:20 am Keynote from Irina Calciu, VMware Research</li>
         <li>11:20 - 12:20 pm Panel Discussion - Jason Lowe-power (UC Davis), Hasan Al Maruf (U Michigan), Michele Gazzetti (IBM Research)</li>
+      </ul>
       </h5>
     
   </div>
