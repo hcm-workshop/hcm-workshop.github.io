@@ -135,7 +135,7 @@ ul.b {
     <h2>Program</h2>
 
     <h3 style="color: #0c4466;"> <strong>Opening Remarks</strong> &emsp;&emsp;&ensp;  8:00 am - 8:10 am ET</h3>
-      <h3 style="color: #0c4466;"> <strong>Section 1 </strong> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; 8:10 am - 9:50 am ET</h3>
+      <h3 style="color: #0c4466;"> <strong>Section 1</strong> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; 8:10 am - 9:50 am ET</h3>
       <h4 class="w3-text-black">
       <ul class="ul.b">
         <li> Invited Talk: Debendra Das Sharma, Intel - TBA  </li>
@@ -145,31 +145,31 @@ ul.b {
           In this talk, I will discuss the problems with using traditional caching for data tiering, and I will show how this technique is inappropriate for heterogeneous memory systems. Further, I will discuss some recent  and ongoing work from the UC Davis 
           Computer Architecture Research Group (DArchR) that uses software hints to enable both transparent and application-specific data movement showing large benefits over traditional hardware caching.
         </p>
-        <h7 class="w3-text-black"> <b>Bio:</b> Jason Lowe-Power is an Assistant Professor at University of California, Davis where he leads the Davis Computer Architecture Research Lab (DArchR). His research interests include optimizing data movement in heterogeneous systems, 
+        <p class="w3-text-black"> <b>Bio:</b> Jason Lowe-Power is an Assistant Professor at University of California, Davis where he leads the Davis Computer Architecture Research Lab (DArchR). His research interests include optimizing data movement in heterogeneous systems, 
           hardware support for security, and simulation infrastructure. Professor Lowe-Power is also the Chair of the Project Management Committee for the gem5 open-source simulation infrastructure. He received his PhD in 2017 from the University of Wisconsin, Madison, and received 
           an NSF CAREER Award and a Google Research Scholar Award.
-        </h7>
+        </p>
         <li> Invited Talk: JHasan Al Maruf, University of Michigan - TPP: Transparent Page Placement for CXL-Enabled Tiered Memory  </li>
-        <h7 class="w3-text-black"> <b>Abstract:</b> ACXL-based memory expansion decouples CPU and memory within a single server and enables flexible server design with different generations and types of memory technologies. 
+        <p class="w3-text-black"> <b>Abstract:</b> ACXL-based memory expansion decouples CPU and memory within a single server and enables flexible server design with different generations and types of memory technologies. 
           It can balance the fleet-wide resource utilization and address the memory bandwidth and capacity scaling challenges in hyperscale datacenters. Without efficient memory management, however, such systems can significantly degrade application-level performance. 
           We propose a novel OS-level application-transparent page placement mechanism (TPP) for efficient CXL-memory management. TPP employs lightweight mechanisms to identify and place hot and cold pages to appropriate memory tiers. It enables page allocation to work independently from page reclamation logic which is tightly-coupled in today's Linux kernel. 
           At the same time, TPP can promptly promote performance-critical hot pages trapped in the slow memory tiers to the fast tier node. Both promotion and demotion mechanisms work transparently without prior knowledge of an application's memory access behavior. TPP improves Linux's performance by up to 18% and outperforms state-of-the-art solutions for tiered memory by 10–17%. 
           TPP has been actively being used in Meta datacenter for over a year and parts of it have been merged to the Linux kernel since v5.18.
-        </h7>
+        </p>
         <li> Invited Talk: Daniel S. Berger, Microsoft - TBA </li>
-        <h7 class="w3-text-black"> <b>Abstract:</b> TBA </h7>
+        <p class="w3-text-black"> <b>Abstract:</b> TBA </p>
         <li> Invited Talk: D Christina Giannnoula, University of Toronto - Efficient Data Movement in Fully Disaggregated Memory Systems </li>
-        <h6 class="w3-text-black"> <b>Abstract:</b> Resource disaggregation offers a cost effective solution to resource scaling, utilization, and failure-handling in data centers by physically separating hardware devices in a server. Servers are architected as pools of processor, memory, 
+        <p class="w3-text-black"> <b>Abstract:</b> Resource disaggregation offers a cost effective solution to resource scaling, utilization, and failure-handling in data centers by physically separating hardware devices in a server. Servers are architected as pools of processor, memory, 
           and storage devices, organized as independent failure-isolated components interconnected by a high-bandwidth network. A critical challenge, however, is the high performance penalty of accessing data from a remote memory module over the network. Addressing this challenge is difficult as 
           disaggregated systems have high runtime variability in network latencies/bandwidth, and page migration can significantly delay critical path cache line accesses in other pages. In this talk, we present a characterization analysis on different data movement strategies in fully disaggregated 
           systems and discuss their performance overheads in a variety of workloads. Then, we describe our new adaptive and software-transparent mechanism that can significantly alleviate data movement overheads in fully disaggregated memory systems. We demonstrate how our proposed hardware mechanism achieves 
           high system performance and robustness in data movement across a wide variety of emerging workloads at different network and architecture configurations. We conclude by providing future research directions on designing intelligent architectures and adaptive approaches for modern computing systems.
-        </h6>
-        <h6 class="w3-text-black"> <b>Bio: </b>
+        </p>
+        <p class="w3-text-black"> <b>Bio: </b>
           Christina Giannoula is a Postdoctoral Researcher at the University of Toronto working with Prof. Gennady Pekhimenko and the EcoSystem research group. She is also working with the SAFARI research group, which is led by Prof. Onur Mutlu. She received her Ph.D. in October 2022 from School of Electrical and Computer Engineering (ECE) at the National Technical University of Athens (NTUA) advised by Prof. Georgios Goumas, 
           Prof. Nectarios Koziris and Prof. Onur Mutlu. Her research interests lie in the intersection of computer architecture, computer systems and high-performance computing. Specifically, her research focuses on the hardware/software co-design of emerging applications, including graph processing, pointer-chasing data structures, machine learning workloads, and sparse linear algebra, with modern computing paradigms, such as large-scale multicore systems, disaggregated memory systems and near-data processing architectures. 
           She has several publications and awards for her research on these topics.
-          </h6>
+          </p>
           
       </h4>
       <h3 class="ws-text-black">Coffee Break&emsp;&emsp;&emsp;&ensp;      9:50 am - 10:20 am ET </h3>
