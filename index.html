@@ -156,9 +156,56 @@ ul.b {
   <div class="w3-content">          
     
     <h2>Program</h2>
-
+    <div class="example-action-buttons">
+      <button mat-button (click)="accordion.openAll()">Expand All</button>
+      <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+    </div>
     <h3 style="color: #0c4466;"> <strong>Opening Remarks</strong> &emsp;&emsp;&ensp;  8:00 am - 8:10 am ET</h3>
       <h3 style="color: #0c4466;"> <strong>Section 1</strong> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; 8:10 am - 9:50 am ET</h3>
+      <mat-accordion class="example-headers-align" multi>
+        <!-- #enddocregion multi -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <div class="my-panel">
+              <h3>Panel Header</h3>
+      
+            </div>
+          </mat-expansion-panel-header>
+      
+          <div>My panel content!</div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <div class="my-panel">
+              <h3>Panel Header</h3>
+      
+            </div>
+          </mat-expansion-panel-header>
+      
+          <div>My panel content!</div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <div class="my-panel">
+              <h3>Panel Header</h3>
+      
+            </div>
+          </mat-expansion-panel-header>
+      
+          <div>My panel content!</div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <div class="my-panel">
+              <h3>Panel Header</h3>
+      
+            </div>
+          </mat-expansion-panel-header>
+      
+          <div>My panel content!</div>
+        </mat-expansion-panel>
+      </mat-accordion>
+      
       <h4 class="w3-text-black">
       <ul class="ul.b">
         <li style="color: #0c4466;"> <b> Invited Talk: Debendra Das Sharma, Intel - Compute Express Link (CXL): A game-changer in the Data Cente </b> </li>
