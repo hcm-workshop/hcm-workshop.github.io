@@ -83,6 +83,22 @@ ul.b {
   background-color: #D1D1D1;
 }
 
+.collapsible2 {
+  background-color: #F5F5F5;
+  color: #0c4466;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible2:hover {
+  background-color: #F5F5F5;
+}
+
 .content {
   padding: 0 18px;
   max-height: 0;
@@ -174,21 +190,33 @@ ul.b {
             </p>
         </div>
 
-        <button class="collapsible"> <h4 class="w3-text-black"><b> Invited Talk: </b> Jason Lowe-power, UC Davis - Managing Memory Smartly</h4> </button>
+        <button class="collapsible2"> <h4 class="w3-text-black"><b> Invited Talk: </b> Jason Lowe-power, UC Davis - Managing Memory Smartly</h4> </button>
+        <div class="content">
+          <p class="w3-text-black"> <b>Abstract:</b> As memory systems are becoming increasingly heterogeneous with different latencies, bandwidths, and device characteristics, we are met with the question: where to place data and when to move data? 
+              In this talk, I will discuss the problems with using traditional caching for data tiering, and I will show how this technique is inappropriate for heterogeneous memory systems. Further, I will discuss some recent  and ongoing work from the UC Davis 
+              Computer Architecture Research Group (DArchR) that uses software hints to enable both transparent and application-specific data movement showing large benefits over traditional hardware caching.
+          </p>
+          <p><strong> Speaker Bio: </strong> </p>Jason Lowe-Power is an Assistant Professor at University of California, Davis where he leads the Davis Computer Architecture Research Lab (DArchR). His research interests include optimizing data movement in heterogeneous systems, 
+              hardware support for security, and simulation infrastructure. Professor Lowe-Power is also the Chair of the Project Management Committee for the gem5 open-source simulation infrastructure. He received his PhD in 2017 from the University of Wisconsin, Madison, and received 
+              an NSF CAREER Award and a Google Research Scholar Award.
+          </p>
+        </div>
+
+        <button class="collapsible"> <h4 class="w3-text-black"><b> Invited Talk: </b> Hasan Al Maruf, University of Michigan - TPP: Transparent Page Placement for CXL-Enabled Tiered Memory</h4> </button>
         <div class="content">
           <p> <strong>Abstract: </strong> </p>
             <p>CXL is a dynamic multi-protocol interconnect technology designed to support accelerators and memory devices. CXL provides a rich set of protocols that include I/O semantics similar to PCIe (i.e., CXL.io), caching protocol semantics (i.e., CXL.cache), 
             and memory access semantics (i.e., CXL.mem) over PCIe PHY. CXL 2.0 specification enabled additional usage models beyond CXL 1.1, while being fully backwards compatible with CXL 1.1 (and CXL 1.0). CXL 2.0 enables dynamic resource allocation including memory and accelerator dis-aggregation across multiple domains. It enables switching, managed hot-plug, security enhancements, persistence memory support, memory error reporting, and telemetry. CXL 3.0 adds new fabric capabilities to build large scale-out systems while doubling the bandwidth with full backwards compatibility to CXL 1.0 and CXL 2.0. 
             The availability of commercial IP blocks, Verification IPs, and industry standard internal interfaces enables CXL to be widely deployed across the industry. These along with a well-defined compliance program will ensure smooth interoperability across CXL devices in the industry. </p>
             <p><strong> Speaker Bio: </strong> </p>
-            <p class="w3-text-black"> <b>Abstract:</b> As memory systems are becoming increasingly heterogeneous with different latencies, bandwidths, and device characteristics, we are met with the question: where to place data and when to move data? 
-              In this talk, I will discuss the problems with using traditional caching for data tiering, and I will show how this technique is inappropriate for heterogeneous memory systems. Further, I will discuss some recent  and ongoing work from the UC Davis 
-              Computer Architecture Research Group (DArchR) that uses software hints to enable both transparent and application-specific data movement showing large benefits over traditional hardware caching.
+            <p class="w3-text-black"> <b>Abstract:</b>  CXL-based memory expansion decouples CPU and memory within a single server and enables flexible server design with different generations and types of memory technologies. 
+              It can balance the fleet-wide resource utilization and address the memory bandwidth and capacity scaling challenges in hyperscale datacenters. Without efficient memory management, however, such systems can significantly degrade application-level performance. 
+              We propose a novel OS-level application-transparent page placement mechanism (TPP) for efficient CXL-memory management. TPP employs lightweight mechanisms to identify and place hot and cold pages to appropriate memory tiers. It enables page allocation to work independently from page reclamation logic which is tightly-coupled in today's Linux kernel. 
+              At the same time, TPP can promptly promote performance-critical hot pages trapped in the slow memory tiers to the fast tier node. Both promotion and demotion mechanisms work transparently without prior knowledge of an application's memory access behavior. TPP improves Linux's performance by up to 18% and outperforms state-of-the-art solutions for tiered memory by 10–17%. 
+              TPP has been actively being used in Meta datacenter for over a year and parts of it have been merged to the Linux kernel since v5.18.
             </p>
-            <p class="w3-text-black"> <b>Bio:</b> Jason Lowe-Power is an Assistant Professor at University of California, Davis where he leads the Davis Computer Architecture Research Lab (DArchR). His research interests include optimizing data movement in heterogeneous systems, 
-              hardware support for security, and simulation infrastructure. Professor Lowe-Power is also the Chair of the Project Management Committee for the gem5 open-source simulation infrastructure. He received his PhD in 2017 from the University of Wisconsin, Madison, and received 
-              an NSF CAREER Award and a Google Research Scholar Award.
-            </p>
+      
+            
         </div>
        <!-- 
         <h4 class="w3-text-black">
