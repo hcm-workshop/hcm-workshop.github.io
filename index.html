@@ -237,26 +237,18 @@ ul.b {
           </p>
         </div>
 
-        <button class="collapsible"> <h4><b> Invited Talk: </b> Hasan Al Maruf, University of Michigan - <span>TPP: Transparent Page Placement for CXL-Enabled Tiered Memory </span> </h4> </button>
-        <div class="content">
-          <p class="w3-text-black"> <b>Abstract:</b>  CXL-based memory expansion decouples CPU and memory within a single server and enables flexible server design with different generations and types of memory technologies. 
-              It can balance the fleet-wide resource utilization and address the memory bandwidth and capacity scaling challenges in hyperscale datacenters. Without efficient memory management, however, such systems can significantly degrade application-level performance. 
-              We propose a novel OS-level application-transparent page placement mechanism (TPP) for efficient CXL-memory management. TPP employs lightweight mechanisms to identify and place hot and cold pages to appropriate memory tiers. It enables page allocation to work independently from page reclamation logic which is tightly-coupled in today's Linux kernel. 
-              At the same time, TPP can promptly promote performance-critical hot pages trapped in the slow memory tiers to the fast tier node. Both promotion and demotion mechanisms work transparently without prior knowledge of an application's memory access behavior. TPP improves Linux's performance by up to 18% and outperforms state-of-the-art solutions for tiered memory by 10–17%. 
-              TPP has been actively being used in Meta datacenter for over a year and parts of it have been merged to the Linux kernel since v5.18.
-          </p>
-        </div>
+        
 
-        <button class="collapsible2"> <h4><b> Invited Talk: </b> Invited Talk: Daniel S. Berger, Microsoft - <span>Design Tradeoffs in CXL-Based Memory Pools for Public Cloud Platforms</span></h4> </button>
-        <div class="content2">
+        <button class="collapsible"> <h4><b> Invited Talk: </b> Invited Talk: Daniel S. Berger, Microsoft - <span>Design Tradeoffs in CXL-Based Memory Pools for Public Cloud Platforms</span></h4> </button>
+        <div class="content">
           <p class="w3-text-black"> <b>Abstract:</b> Cloud providers seek to deploy CXL-based memory pools to reduce fragmentation as well as the footprint of their embedded carbon. However, the design space of CXL-based memory systems is large. Key questions center around the size, reach, topology, and cost of the memory pool. 
             Pooling also requires navigating complex design constraints around performance, virtualization, and management. This talk discusses why cloud providers are working to deploy CXL memory pools, key design constraints, and observations in designing towards practical deployment. </p>
           <p><strong> Speaker Bio: </strong> </p>Daniel S. Berger is a Senior Researcher at Microsoft Azure Systems Research and an Affiliate Assistant Professor at the University of Washington. His research focuses on improving memory efficiency, sustainability, and robustness in public clouds. He is the recipient of the 2018-2019 Mark Stehlik Postdoctoral Fellowship at Carnegie Mellon University and the 2021 ACM SOSP Best Paper Award.
           </p>
         </div>
 
-        <button class="collapsible"> <h4><b> Invited Talk: </b> Christina Giannnoula, University of Toronto - <span> Efficient Data Movement in Fully Disaggregated Memory Systems </span></h4> </button>
-        <div class="content">
+        <button class="collapsible2"> <h4><b> Invited Talk: </b> Christina Giannnoula, University of Toronto - <span> Efficient Data Movement in Fully Disaggregated Memory Systems </span></h4> </button>
+        <div class="content2">
           <p> <strong>Abstract: </strong> </p>
             <p>Resource disaggregation offers a cost effective solution to resource scaling, utilization, and failure-handling in data centers by physically separating hardware devices in a server. Servers are architected as pools of processor, memory, 
               and storage devices, organized as independent failure-isolated components interconnected by a high-bandwidth network. A critical challenge, however, is the high performance penalty of accessing data from a remote memory module over the network. Addressing this challenge is difficult as 
@@ -282,7 +274,15 @@ ul.b {
               Dr. Das Sharma holds 160+ US patents and is a frequent keynote speaker, distinguished lecturer, invited speaker, and panelist at the Hot Interconnects, PCI-SIG Developers Conference, CXL consortium events, Open Server Summit, Open Fabrics Alliance, Flash Memory Summit, SNIA SDC, and Intel Developer Forum. He has a B.Tech in Computer Science and Engineering from the Indian Institute of Technology, Kharagpur and a Ph.D. in Computer Engineering from the University of Massachusetts, Amherst. He has been awarded the Distinguished Alumnus Award from Indian Institute of Technology, Kharagpur in 2019, the IEEE Region 6 Outstanding Engineer Award in 2021, the first PCI-SIG Lifetime Contribution Award in 2022, and the IEEE Circuits and Systems Industrial Pioneer Award in 2022.
             </p>
         </div>
-
+        <button class="collapsible2"> <h4><b> Invited Talk: </b> Hasan Al Maruf, University of Michigan - <span>TPP: Transparent Page Placement for CXL-Enabled Tiered Memory </span> </h4> </button>
+        <div class="content2">
+          <p class="w3-text-black"> <b>Abstract:</b>  CXL-based memory expansion decouples CPU and memory within a single server and enables flexible server design with different generations and types of memory technologies. 
+              It can balance the fleet-wide resource utilization and address the memory bandwidth and capacity scaling challenges in hyperscale datacenters. Without efficient memory management, however, such systems can significantly degrade application-level performance. 
+              We propose a novel OS-level application-transparent page placement mechanism (TPP) for efficient CXL-memory management. TPP employs lightweight mechanisms to identify and place hot and cold pages to appropriate memory tiers. It enables page allocation to work independently from page reclamation logic which is tightly-coupled in today's Linux kernel. 
+              At the same time, TPP can promptly promote performance-critical hot pages trapped in the slow memory tiers to the fast tier node. Both promotion and demotion mechanisms work transparently without prior knowledge of an application's memory access behavior. TPP improves Linux's performance by up to 18% and outperforms state-of-the-art solutions for tiered memory by 10–17%. 
+              TPP has been actively being used in Meta datacenter for over a year and parts of it have been merged to the Linux kernel since v5.18.
+          </p>
+        </div>
        <!-- 
         <h4 class="w3-text-black">
       <ul class="ul.b">
