@@ -560,6 +560,17 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+var imageSources = ["images/1.jpg", "images/2.jpg"]
+
+var index = 0;
+setInterval(function(){
+  if (index === imageSources.length) {
+    index = 0;
+  }
+  document.getElementById("image").src = imageSources[index];
+  index++;
+  }, 2000);
+  
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
@@ -575,16 +586,7 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 
-var imageSources = ["images/1.jpg", "images/2.jpg"]
 
-var index = 0;
-setInterval(function(){
-  if (index === imageSources.length) {
-    index = 0;
-  }
-  document.getElementById("image").src = imageSources[index];
-  index++;
-  }, 2000);
 
 </script>
 
