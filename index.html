@@ -161,7 +161,7 @@ ul.b {
     <a href="#cfp" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Call for Papers</a>
     <a href="#dates" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Important Dates</a>
     <a href="#committees" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Committees</a>
-    <a href="#images" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Photos</a>
+    <a href="#img" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Photos</a>
   </div>
 </div>
   
@@ -185,7 +185,7 @@ ul.b {
 
 <div class="w3-row-padding w3-padding-16 w3-container" id="image">
   <div class="w3-content">      
-    <img id="images" src="images/1.jpg" style="width:800px">
+    <img id="img" src="images/1.jpg" style="width:800px" class="center">
     <p></p>
   </div>
 </div>
@@ -538,9 +538,9 @@ setInterval(function(){
   if (index === imageSources.length) {
     index = 0;
   }
-  document.getElementById("images").src = imageSources[index];
+  document.getElementById("img").src = imageSources[index];
   index++;
-  }, 1);
+  }, 2000);
 
 
 // Tabbed Menu
